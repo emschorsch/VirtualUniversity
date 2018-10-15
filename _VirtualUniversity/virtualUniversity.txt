@@ -1,0 +1,50 @@
+to do list
+
+account info storable
+settings
+chat
+mobile/desktop css
+search system /filter/sort by
+dl system per file
+filetypes: video, image, audio, txt, etc
+encrypted messaging / file storage and transfer
+
+
+load canvas apps into the media content area
+personal training apps
+load item from selection screen
+
+test 3d features
+
+public/private tabbed notepads
+
+set price and privacy by file
+partial/full viewability 
+
+id channel number +  alphabetical live streams
+channel title and current title 
+
+public/private chat rooms
+
+3 second ads, ad gallery
+{
+ play ad
+ after 3 seconds, display the skip add button, to playMainVideo()
+ at end of ads, automatically call playMainVideo()
+ 
+ calculate ad payments based on negotiable per view and view-time-based systems (make simple form for such)
+}
+ 
+ auto play on vids and audio, slide shows on images
+
+dog english, cat german, bird russian proto accounts, test sign in and verification systems
+
+
+opacity settings
+
+shop galleries linked to public marketplace
+
+
+guided courses
+
+account field for media locations

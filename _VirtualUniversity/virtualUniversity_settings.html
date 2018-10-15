@@ -1,0 +1,105 @@
+<!-- 
+Project: Virtual University
+
+Filename: virtualUniversity_settings.html
+
+Notes:
+
+To Do:
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>Virtual University - Settings</title>
+ <link rel="icon" href="virtualUniversityLogo.png">
+ <link rel="stylesheet" href="virtualUniversity_index.css">
+ <link rel="stylesheet" href="virtualUniversity_settings.css">
+
+</head>
+
+<body>
+<div id="siteHeaderBar"> 
+ <ul>
+  <li><a href="virtualUniversity_index.html">Home</a></li>
+  <li><a href="virtualUniversity_profile.html">Profile</a></li>
+  <li><a href="virtualUniversity_galleries.html">Galleries</a></li>
+  <li><a href="virtualUniversity_settings.html">Settings</a></li>
+ </ul> 
+ <ul id="searchBar">
+  <li><input placeholder="Search for..."></input></li>
+  <li><button onclick="displaySearchBox">Search</button></li>
+  <li><button onclick="displaySearchBox">Adv. Search</button></li>
+ </ul>  
+</div>
+
+<div id="pageHeaderBar"> 
+ <ul>
+  <li><button onclick="saveSettings()">Save Settings</button></li>
+  <li><button onclick="reshowCurrentSettings()">Reshow Current Settings</button></li>
+  <li><button onclick="restoreDefaultSettings()">Restore Default Settings</button></li>
+ </ul> 
+</div>
+
+<div id="mainArea"> 
+ <div id="mainContent">
+  <h1>Settings</h1>
+  <!--Load current checked settings -->
+  <div id="themeSection">
+   <h2>Theme</h2>
+   <form name="themeSettingsForm" id="themeSettingsForm">
+   
+   Site Header Bar Color<br>
+   <input id="siteHeaderBarColor" type="text" name="siteHeaderBarColor"><br><br>
+   
+   Page Header Bar Color<br>
+   <input id="pageHeaderBarColor" type="text" name="pageHeaderBarColor"><br><br>
+  
+   Background color<br>
+   <input id="backgroundColor" type="text" name="backgroundColor"><br><br>
+  
+   Background image<br>
+   <input id="backgroundImage" type="text" name="backgroundImage"><br><br>
+  
+   <button onclick="saveSettings()">Save Settings</button>
+   </form>
+  </div>
+  
+  <div id="privacySecuritySection">
+   <h2>Privacy/Security</h2>
+   <form>
+   Profile Searchable<br>
+   <input type="radio" name="profileSearchable" value="yes">Yes <br>
+   <input type="radio" name="profileSearchable" value="no" checked>No <br><br>
+   
+   Profile Viewable By<br>
+   <input type="radio" name="profileViewableBy" value="none"checked>None<br>
+   <input type="radio" name="profileViewableBy" value="invite">Invite<br>
+   <input type="radio" name="profileViewableBy" value="network">Network<br>
+   <input type="radio" name="profileViewableBy" value="all">All<br><br>
+   
+   Default Item Post Security<br>
+   <input type="radio" name="defaultPostSecLv" value="none" checked>None<br>
+   <input type="radio" name="defaultPostSecLv" value="invite">Invite<br>
+   <input type="radio" name="defaultPostSecLv" value="network">Network<br>
+   <input type="radio" name="defaultPostSecLv" value="all">All<br><br>
+   <!--Note: Add sec lv option when posting content-->
+   
+  </form>
+  </div>
+ 
+ </div>
+</div>
+
+
+<script src="jquery.js"></script>
+<script src="virtualUniversity_accounts.js"></script>
+<script src="virtualUniversity_index.js"></script>
+<script src="virtualUniversity_settings.js"></script>
+
+</body>
+</html>

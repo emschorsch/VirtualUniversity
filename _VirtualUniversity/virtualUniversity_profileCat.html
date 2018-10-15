@@ -1,0 +1,158 @@
+<!-- 
+Project: Virtual University
+
+Filename: virtualUniversity_profileCat.html
+
+Notes:
+
+To Do:
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+
+ <title>Virtual University - Cat's Profile</title>
+ <link rel="icon" href="virtualUniversityLogo.png">
+ <link rel="stylesheet" href="virtualUniversity_index.css">
+ <link rel="stylesheet" href="virtualUniversity_profile.css">
+
+</head>
+
+<body>
+<div id="siteHeaderBar"> 
+ <ul>
+  <li><a href="virtualUniversity_index.html">Home</a></li>
+  <li><a href="virtualUniversity_profile.html">Profile</a></li>
+  <li><a href="virtualUniversity_galleries.html">Galleries</a></li>
+  <li><a href="virtualUniversity_settings.html">Settings</a></li>
+ </ul> 
+ <ul id="searchBar">
+  <li><button onclick="displaySearchBox">Search</button></li>
+ </ul> 
+</div>
+
+<div id="pageHeaderBar"> 
+ <ul> <!-- load divs -->
+  <li><button onclick="displayInfoSection()">Info</button></li>
+  <li><button onclick="displayGalleriesSection()">Galleries</button></li>
+  <li><button onclick="displayNetworkSection()">Network</button></li>
+ </ul> 
+</div>
+
+<div id="mainArea"> 
+ <div id="mainContent">
+  <div id="infoSection">
+   <h1>_Cat's_ Info</h1>
+   <button onclick="displayEditInfoBox">Edit Info</button>
+   <h2>Basic Info</h2>
+   
+   <div id="profileAlbum" class="mediaGallery">
+    <img class="mySlides" src="rsc/dog0.jpg" alt="Profile Pic" width="200">
+    <img class="mySlides" src="rsc/dog1.jpg" width="200">
+    <img class="mySlides" src="rsc/dog2.jpg" width="200">
+    <img class="mySlides" src="rsc/dog3.jpg" width="200px">
+  
+    <ul>
+     <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+     <button onclick="addImgToGallery()">Add</button>
+     <button onclick="editImgGallery()">Edit</button>
+     <button onclick="deleteImgFromGallery()">Delete</button>
+     <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </ul>
+   </div>
+   
+   <ul>
+    <li>ID: 0</li>
+    <li>Alias: Whiskers</li>
+    <li>Tag line: [meow mix song]</li>
+   </ul> 
+ 
+   <h2>Interests</h2>
+   <p>Being a cat. nough said.</p>
+   
+   <h2>Resume/Cover Letter</h2>
+   <p>Good at fishing and furniture modification</p>
+  </div>
+  
+  <div id="galleriesSection">
+   <h1>Galleries</h1>
+   <button onclick="displayEditInfoBox">Edit Gallery</button>
+  
+  <h2>Portfolio</h2>
+    <h2>Educational</h2>
+  <div class="galleryCover">
+   <h2><a href="virtualUniversity_galleryExample.html">Knitting</a></h2>
+   <img src="virtualUniversityLogo.png" height="100px"></img>
+   <p>All bout that 1337</p>
+  </div>
+  
+  <div class="galleryCover">
+   <h2><a href="virtualUniversity_galleryExample.html">Tree climbing</a></h2>
+   <img src="virtualUniversityLogo.png" height="100px"></img>
+   <p>Description</p>
+  </div>
+  
+  <div class="galleryCover">
+   <h2><a href="virtualUniversity_galleryExample.html">Cow farming</a></h2>
+   <img src="virtualUniversityLogo.png" height="100px"></img>
+   <p>All bout that 1337</p>
+  </div>
+  
+  <div class="galleryCover">
+   <h2><a href="virtualUniversity_galleryExample.html">Art And Music</a></h2>
+   <img src="virtualUniversityLogo.png" height="100px"></img>
+   <p>Description</p>
+  </div>
+  
+  <div class="galleryCover">
+   <h2><a href="virtualUniversity_galleryExample.html">Computer Technology</a></h2>
+   <img src="virtualUniversityLogo.png" height="100px"></img>
+   <p>All bout that 1337</p>
+  </div>
+  
+  <div class="galleryCover">
+   <h2><a href="virtualUniversity_galleryExample.html">Advertisements</a></h2>
+   <img src="virtualUniversityLogo.png" height="100px"></img>
+   <p>Description</p>
+  </div>
+
+   
+    <h2>Entertainment</h2>
+	<h2>Live</h2>
+  
+   
+   
+  </div>
+  <br><br>
+  <div id="networkSection">
+   <h1>Network</h1>
+   <button onclick="displayEditInfoBox">Edit Network</button>
+   
+   <div class="networkListItem galleryCover">
+    <h2><a href="virtualUniversity_profile.html">dog</a></h2>
+	<img src="virtualUniversityLogo.png" height="100px"></img>
+   <p>All bout that 1337</p>
+   </div>
+   
+   <div class="networkListItem galleryCover">
+    <h2><a href="virtualUniversity_profileBird.html">bird</a></h2>
+	<img src="virtualUniversityLogo.png" height="100px"></img>
+   <p>All bout that 1337</p>
+   </div>
+   
+
+  </div>
+  
+ 
+ </div>
+</div>
+
+<script src="virtualUniversity_index.js"></script>
+<script src="virtualUniversity_profile.js"></script>
+
+</body>
+</html>
